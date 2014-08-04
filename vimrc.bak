@@ -77,6 +77,10 @@ let Tlist_Process_File_Always=1 "taglist始终解析文件中的tag，不管tagl
 
 let Tlist_File_Fold_Auto_Close=1 "同时显示多个文件中的tag时，可使taglist只显示当前文件tag，其它文件的tag都被折叠起来
 
+
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 ""==========================================
 "" file encode, 文件编码,格式
 ""==========================================
